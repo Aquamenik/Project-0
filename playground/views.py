@@ -3,6 +3,7 @@ from django.http import HttpResponse
 
 
 def say_hello(request):
-    return HttpResponse('Hello world')
+    return HttpResponse("Hello world")
 
-
+def v1(request):
+    return HttpResponse("sdfgdfsgsdf")
