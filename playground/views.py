@@ -2,8 +2,21 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-def say_hello(request):
-    return HttpResponse("Hello world")
+def store(request):
+    context = {}
+    return render(request, 'store/store.html', context)
 
-def v1(request):
-    return HttpResponse("sdfgdfsgsdf")
+def cart(request):
+    context = {}
+    return render(request, 'store/cart.html', context)
+
+def checkout(request):
+    context = {}
+    return render(request, 'store/checkout.html', context)
+
+
+
+
+
+
+
